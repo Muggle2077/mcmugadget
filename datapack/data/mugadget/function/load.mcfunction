@@ -1,0 +1,1 @@
+scoreboard objectives add mugadget.use minecraft.used:minecraft.carrot_on_a_stick

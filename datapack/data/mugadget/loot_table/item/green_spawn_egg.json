@@ -1,0 +1,93 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:skeleton_spawn_egg"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:item_name": {
+              "translate": "item.mugadget.green_spawn_egg"
+            },
+            "minecraft:entity_data": {
+              "id": "minecraft:skeleton",
+              "attributes": [
+                {
+                  "id": "minecraft:movement_speed",
+                  "base": 0.35
+                },
+                {
+                  "id": "minecraft:follow_range",
+                  "base": 35
+                },
+                {
+                  "id": "minecraft:max_health",
+                  "base": 24
+                }
+              ],
+              "Health": 24,
+              "equipment": {
+                "mainhand": {
+                  "id": "minecraft:bow",
+                  "count": 1
+                },
+                "offhand": {
+                  "id": "tipped_arrow",
+                  "count": 1,
+                  "components": {
+                    "potion_contents": {
+                      "potion": "minecraft:poison"
+                    }
+                  }
+                },
+                "head": {
+                  "id": "minecraft:leather_helmet",
+                  "count": 1,
+                  "components": {
+                    "dyed_color": 43520
+                  }
+                },
+                "chest": {
+                  "id": "minecraft:leather_chestplate",
+                  "count": 1,
+                  "components": {
+                    "dyed_color": 43520
+                  }
+                },
+                "legs": {
+                  "id": "minecraft:leather_leggings",
+                  "count": 1,
+                  "components": {
+                    "dyed_color": 43520
+                  }
+                },
+                "feet": {
+                  "id": "minecraft:leather_boots",
+                  "count": 1,
+                  "components": {
+                    "dyed_color": 43520
+                  }
+                }
+              },
+              "DeathLootTable": "mugadget:entity/green",
+              "Tags": [
+                "mugadget.green",
+                "mugadget.bow"
+              ]
+            }
+          }
+        },
+        {
+          "function": "minecraft:set_count",
+          "count": 64
+        }
+      ]
+    }
+  ]
+}

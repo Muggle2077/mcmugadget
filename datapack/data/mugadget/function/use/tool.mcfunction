@@ -1,0 +1,1 @@
+$function mugadget:$(id)/use

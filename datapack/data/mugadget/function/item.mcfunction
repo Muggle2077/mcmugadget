@@ -1,0 +1,1 @@
+loot give @s loot mugadget:item/green_spawn_egg
